@@ -19,3 +19,8 @@ impl Debug for Value {
         }
     }
 }
+
+pub fn lib_print(exe: &mut ExeState) -> i32 {
+    println!("{:?}", exe.stack[1]);
+    0
+}
